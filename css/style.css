@@ -513,6 +513,40 @@ ol,ul{
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* to top button */
+.to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary); 
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+  z-index: 999;
+}
+
+.to-top-btn a {
+  color: var(--color-white);
+}
+.to-top-btn:hover {
+  background-color: var(--color-secondary); 
+  transform: translateY(-5px);
+}
+
+/* 當按鈕顯示時的 class */
+.to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 /* --- 手機版 RWD --- */
 @media (max-width: 1024px) {
