@@ -151,6 +151,7 @@ ol,ul{
   color: white;
   font-size: 24px;
   animation: bounce 2s infinite;
+  left: calc(50% - 14px) ;
 }
 
 /* Section1-Grid */
