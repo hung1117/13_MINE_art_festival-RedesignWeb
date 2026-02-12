@@ -292,8 +292,11 @@ ol,ul{
 }
 
 .card-body {
-  padding: 20px;
+  padding: 20px 15px;
   background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;
 }
 
 .card-title {
@@ -314,6 +317,12 @@ ol,ul{
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.card-info{
+  /* border-top: 1px solid #eee; */
+  /* padding-top: 10px; */
+  margin-top: auto;
 }
 
 /* 「更多連結」 */
